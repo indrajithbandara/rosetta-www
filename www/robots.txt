@@ -1,0 +1,12 @@
+---
+title: robots.txt
+---
+#
+# robots.txt for {{ site.name }}
+#
+# all content is indexable
+#
+Disallow: /css
+Disallow: /js
+Sitemap: {{ site.url }}/sitemap.xml
+

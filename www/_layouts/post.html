@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="row-fluid">
+	<div class="span12">
+		<div class="pull-right">
+			{% if page.previous %}<a class="btn btn-small" href="{{ page.previous.url }}">Previous</a>{% endif %}
+			{% if page.next %}<a class="btn btn-small" href="{{ page.next.url }}">Next</a>{% endif %}
+		</div>
+		<h3>{{ page.title }}</h3>
+	</div>
+</div>
+

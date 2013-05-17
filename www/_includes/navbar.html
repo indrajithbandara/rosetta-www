@@ -1,0 +1,10 @@
+<div class="masthead">{% assign pathparts = page.url | split:'/' %}
+	<ul class="nav nav-pills pull-right">
+		<li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="/index.html">Home</a></li>
+		<li{% if page.url == '/support/faq.html' %} class="active"{% endif %}><a href="/support/faq.html">FAQ</a></li>
+		<li{% if pathparts[1] == 'files' %} class="active"{% endif %}><a href="/files/index.html">Files</a></li>
+		<li{% if page.url == '/support/contact.html' %} class="active"{% endif %}><a href="/support/contact.html">Contact</a></li>
+	</ul>
+	<h3 class="muted">The Digital Rosetta Stone</h3>
+</div>
+<hr>

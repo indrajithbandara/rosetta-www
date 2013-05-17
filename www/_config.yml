@@ -1,0 +1,8 @@
+#
+# _config.yml for DigitalRosetta
+#
+
+exclude: [  ]
+permalink: /files/:year/:title.html
+url: http://www.digitalrosetta.org
+name : The Digital Rosetta Stone
