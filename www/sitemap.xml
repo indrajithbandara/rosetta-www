@@ -3,7 +3,7 @@ title: Sitemap
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for thePage in site.pages %}	<url>
+{% for thePage in site.posts reversed %}{% unless thePage.draft %}	<url>
 		<loc>{{ site.url }}{{ thePage.url }}</loc>
 	</url>
-{% endfor %}</urlset>
+{% endunless %}{% endfor %}</urlset>
