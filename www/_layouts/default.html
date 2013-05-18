@@ -2,8 +2,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>{{ page.title }} - {{ site.name }}</title>
-	{% include meta.html %}
-	{% if page.url == '/index.html'%}{% include meta-home.html %}{% endif %}
+{% include meta.html %}
+{% include script.html %}
+{% if page.url == '/index.html'%}{% include meta-home.html %}{% endif %}
 </head>
 <body>
 <div class="container-narrow">
@@ -13,6 +14,5 @@
 
 {% include footer.html %}
 </div><!--/.fluid-container-->
-{% include script.html %}
 </body>
 </html>

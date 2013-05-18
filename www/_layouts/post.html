@@ -2,12 +2,15 @@
 layout: default
 ---
 <div class="row-fluid">
-	<div class="span12">
+	<div class="span12" style="vertical-align:middle;">
 		<div class="pull-right">
 			{% if page.previous %}<a class="btn btn-small" href="{{ page.previous.url }}">Previous</a>{% endif %}
 			{% if page.next %}<a class="btn btn-small" href="{{ page.next.url }}">Next</a>{% endif %}
 		</div>
 		<h3>{{ page.title }}</h3>
+		{% if page.draft %}<div class="alert alert-warning alert-block"><h4>DRAFT</h4>
+		This entry is incomplete, unlicensed, or otherwise not ready for use.
+		</div>{% endif %}
 	</div>
 </div>
 
