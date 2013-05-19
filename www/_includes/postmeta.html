@@ -1,0 +1,33 @@
+<script type="text/javascript" src="/js/properties.js"></script>
+<script type="text/javascript">
+	$(document).ready( function() {
+		$.ajax({
+			dataType: "text",
+			error: function(xhr, status, error) { $("#drs-metadata").empty().append($("<div>").addClass("alert alert-error").text(status + ": " + error));  },
+			success:  function(data) { displayMetadata(parseProperties(data));},
+			timeout: 10000,
+			type: "GET",
+			url: "http://key.fileformat.info/{{ page.date | date: "%Y" }}-{{ page.slug }}.properties"
+		});
+	});
+
+	function displayMetadata(metadata)
+	{
+		var table = $("<table>").addClass("table table-bordered table-striped");
+
+		for (var key in metadata)
+		{
+			var row = $("<tr>");
+			row.append($("<td>").text(key));
+			row.append($("<td>").text(metadata[key]));
+			table.append(row);
+		}
+		$("#drs-metadata").empty().append(table);
+	}
+
+</script>
+<div class="row-fluid">
+	<div class="span12" id="drs-metadata" style="margin-top:10px;">
+		<p>Loading metadata.  Please wait...</p>
+	</div>
+</div>
