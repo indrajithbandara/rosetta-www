@@ -13,15 +13,15 @@ layout: default
 <hr>
 
 <div class="row-fluid">
-	<div class="span4">
+	<div class="span4 linkbox" id="raster">
 		<h3>Raster images</h3>
 		<p>Photos, screenshots</p>
 	</div>
-	<div class="span4">
+	<div class="span4 linkbox" id="vector">
 		<h3>Vector images</h4>
 		<p>CAD/CAM, diagrams, flowcharts, fonts, 3D shapes</p>
 	</div>
-	<div class="span4">
+	<div class="span4 linkbox" id="text">
 		<h3>Text</h4>
 		<p>Plain (unformatted) text</p>
 	</div>
@@ -31,7 +31,7 @@ layout: default
 		<h3>Video</h4>
 		<p>Moving images</p>
 	</div>
-	<div class="span4">
+	<div class="span4 linkbox" id="audio">
 		<h3>Audio</h4>
 		<p>Music and sound recordings</p>
 	</div>
@@ -54,4 +54,19 @@ layout: default
 		<p>Any of the other zillion things you might store digitally that don't fit any of the other categories.</p>
 	</div>
 </div>
+<style>
+.linkbox { cursor:pointer;}
+</style>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$(".linkbox").click(function() {
+			var tag = $(this).attr("id");
+			window.location.href = window.location.protocol + '//' + window.location.host + '/files/index.html#' + tag;
+		});
+	});
+
+</script>
+
 

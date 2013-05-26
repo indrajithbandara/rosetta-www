@@ -20,6 +20,24 @@ layout: default
 </table>
 <script type="text/javascript">
 
+	function switchTabs()
+	{
+		$("#drs-tabs > li").removeClass("active");
+		var hash = window.location.hash;
+		if (!hash || hash == '#')
+		{
+			$(".drs-entry-row").show();
+			$("#tab-all").addClass("active");
+		}
+		else
+		{
+			console.log(hash.substring(1));
+			$(".drs-entry-row").hide();
+			$(".tag-" + hash.substring(1)).show();
+			$("#tab-" + hash.substring(1)).addClass("active");
+		}
+	}
+
 	$(document).ready(function() {
 
 		$("tr.drs-entry-row").click(function() {
@@ -27,22 +45,9 @@ layout: default
 			elem.click();
 		});
 
-		$(window).bind('hashchange', function() {
-			$("#drs-tabs > li").removeClass("active");
-			var hash = window.location.hash;
-			if (!hash || hash == '#')
-			{
-				$(".drs-entry-row").show();
-				$("#tab-all").addClass("active");
-			}
-			else
-			{
-				console.log(hash.substring(1));
-				$(".drs-entry-row").hide();
-				$(".tag-" + hash.substring(1)).show();
-				$("#tab-" + hash.substring(1)).addClass("active");
-			}
-        });
+		switchTabs();
+
+		$(window).bind('hashchange', switchTabs);
 	});
 
 </script>
