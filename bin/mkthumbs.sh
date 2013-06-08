@@ -16,4 +16,5 @@ ORIG=../../rosetta-key/www
 #./_mkthumb.sh ../thumbnail/independence.jpeg independence
 #./_mkthumb.sh ${ORIG}/2002-tiger.eps tiger
 #./_mkthumb.sh ../thumbnail/smallstep.jpeg smallstep
-./_mkthumb.sh ../thumbnail/droits.jpeg droits
+#./_mkthumb.sh ../thumbnail/droits.jpeg droits
+./_mkthumb.sh ../thumbnail/auclairdelalune.jpeg auclairdelalune
