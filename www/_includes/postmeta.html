@@ -25,7 +25,7 @@
 			var row = $("<tr>");
 			row.append($("<td>").text(key));
 			var value = metadata[key];
-			if (value.startsWith("http://") || value.startsWith("https://"))
+			if (value.match(/^https?:\/\//))
 			{
 				row.append($("<td>").append($("<a>").attr("href", value).text(value)));
 			}
@@ -33,7 +33,7 @@
 			{
 				row.append($("<td>").text(value));
 			}
-			if (key.startsWith("changelog"))
+			if (key.match(/^changelog-/))
 			{
 				logtable.append(row);
 			}
@@ -65,7 +65,7 @@
 </script>
 <div class="row-fluid">
 	<div class="span12">
-		<h3>Metadata</h3>
+		<h3>Metadata <small><a href="/support/metadata.html"><i class="icon-question-sign"></i></a></small></h3>
 		<div id="drs-metadata">
 			<p>Loading, please wait...</p>
 		</div>

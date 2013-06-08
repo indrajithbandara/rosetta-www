@@ -40,9 +40,9 @@ layout: default
 					<td>required if downloaded</td>
 				</tr>
 				<tr>
-					<td>download_date</td>
-					<td>date of the original download</td>
-					<td>ISO 8601</td>
+					<td>download_page</td>
+					<td>HTML page with a link to download the file.  Often needed if the original website prevents hotlinking.</td>
+					<td>optional</td>
 				</tr>
 				<tr>
 					<td>duration</td>
@@ -50,14 +50,9 @@ layout: default
 					<td>In seconds (rounded up)</td>
 				</tr>
 				<tr>
-					<td>download_page</td>
-					<td>HTML page with a link to download the file.  Often needed if the original website prevents hotlinking.</td>
-					<td>optional</td>
-				</tr>
-				<tr>
 					<td>extension</td>
 					<td>the last part of the file name, after the period (.)</td>
-					<td>&nbsp;</td>
+					<td>required</td>
 				</tr>
 				<tr>
 					<td>md5sum</td>
