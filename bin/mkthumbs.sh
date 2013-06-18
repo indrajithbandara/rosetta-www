@@ -4,8 +4,8 @@
 #
 #
 ORIG=../../rosetta-key/www
-#./_mkthumb.sh ${ORIG}/1903-firstflight.tif firstflight
-#./_mkthumb.sh ${ORIG}/1969-earthrise.tif earthrise
+#./_mkthumb.sh ${ORIG}/1903-firstflight.tiff firstflight
+#./_mkthumb.sh ${ORIG}/1969-earthrise.tiff earthrise
 #./_mkthumb.sh ${ORIG}/1972-pioneer10.svg pioneer10
 #./_mkthumb.sh ${ORIG}/1977-voyagercover.jpeg voyager
 #./_mkthumb.sh ../thumbnail/adultschool.jpeg adultschool
@@ -20,5 +20,6 @@ ORIG=../../rosetta-key/www
 #./_mkthumb.sh ../thumbnail/auclairdelalune.jpeg auclairdelalune
 #./_mkthumb.sh ../thumbnail/magnacarta.jpeg magnacarta
 #./_mkthumb.sh ../thumbnail/bluemarble.png bluemarble
-./_mkthumb.sh ../thumbnail/accent.jpeg accent
-./_mkthumb.sh ../thumbnail/settlement.jpeg settlement
+#./_mkthumb.sh ../thumbnail/accent.png accent
+#./_mkthumb.sh ../thumbnail/settlement.jpeg settlement
+./_mkthumb.sh ../thumbnail/webpage.png webpage

@@ -32,3 +32,13 @@ do
 		$DEST/$2-${SIZE}w.png
 done
 
+BIGSIZES=( 1024 2048 )
+for BIGSIZE in "${BIGSIZES[@]}"
+do
+	# fixed width, with height proportional
+	convert $1 \
+		-resize ${BIGSIZE}x \
+		-gravity center \
+		$DEST/$2-${BIGSIZE}w.jpeg
+done
+
