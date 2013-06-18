@@ -1,4 +1,4 @@
-{% if page.draft %}	<meta name="robots" content="NOINDEX" />
+{% if page.draft or page.noindex %}	<meta name="robots" content="NOINDEX" />
 {% endif %}	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.css" />
 	<link type="text/css" rel="stylesheet" href="/css/font-awesome.css" />
