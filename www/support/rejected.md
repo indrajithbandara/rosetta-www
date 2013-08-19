@@ -18,3 +18,6 @@ These are files that I considered but ended up not using.
  * http://iconicphotos.wordpress.com/2009/07/21/buzz-adrin-salutes-american-flag/
  * http://iconicphotos.wordpress.com/2009/07/16/moon-shot/
 
+## Vector
+
+ * ISO 12233 chart - too restricted, not that interesting
