@@ -28,7 +28,6 @@ compile '*' do
 	else
 		filter :erb
 		if item[:extension] == 'md'
-			puts "kramdown! #{item.identifier} #{item[:extension]}"
 			filter :kramdown
 		end
 		if item[:layout]
