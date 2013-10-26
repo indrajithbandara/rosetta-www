@@ -1,0 +1,102 @@
+---
+title: Home Page
+layout: default
+---
+<div class="jumbotron">
+	<h1>Save your bits!</h1>
+	<p class="lead">
+		A digital archaeologist is trying to decipher your precious memories.  Would you give them a clue?
+	</p>
+	<a class="btn btn-large btn-success" href="/support/faq.html">Learn more</a>
+</div>
+
+<hr>
+
+<div class="row-fluid">
+	<div class="span4 linkbox" id="raster">
+		<h3>Raster images</h3>
+		<p>Photos, screenshots</p>
+	</div>
+	<div class="span4 linkbox" id="vector">
+		<h3>Vector images</h4>
+		<p>CAD/CAM, diagrams, flowcharts, fonts, 3D shapes</p>
+	</div>
+	<div class="span4 linkbox" id="text">
+		<h3>Text</h4>
+		<p>Plain (unformatted) text</p>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span4">
+		<h3>Video</h4>
+		<p>Moving images</p>
+	</div>
+	<div class="span4 linkbox" id="audio">
+		<h3>Audio</h4>
+		<p>Music and sound recordings</p>
+	</div>
+	<div class="span4 linkbox" id="document">
+		<h3>Documents</h4>
+		<p>Formatted text, eBooks</p>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span4">
+		<h3>Data</h4>
+		<p>Spreadsheets, databases, data interchange formats</p>
+	</div>
+	<div class="span4">
+		<h3>Containers</h4>
+		<p>Archives, compressed files, disk images and other bundles of multiple files</p>
+	</div>
+	<div class="span4">
+		<h3>Other</h4>
+		<p>Any of the other zillion things you might store digitally that don't fit any of the other categories.</p>
+	</div>
+</div>
+<style>
+.linkbox { cursor:pointer;}
+</style>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$(".linkbox").click(function() {
+			var tag = $(this).attr("id");
+			window.location.href = window.location.protocol + '//' + window.location.host + '/files/index.html#' + tag;
+		});
+	});
+
+</script>
+
+<style type="text/css">
+.pin-title { font-size:14px;text-decoration:none;color:#00a}
+.pin-description { color:#555; }
+.pin-tag { display:none; }
+</style>
+<div style="margin-top:20px">
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="btn-inverse"><img style="border: 1px solid white;" src="/images/16x16/bluepin.gif" alt="Pinboard.in" /> Recently Bookmarked</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<script language="javascript" src="http://pinboard.in//widgets/v1/linkroll/?user=fileformat&count=5&tag=rosetta"></script>
+					<a class="btn btn-mini" href="/support/links.html">More...</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<pre>
+	x<%= @item.inspect() %>x
+	x<%= @item.path %>x
+	x<%= @item.identifier %>x
+</pre>
+
+
+

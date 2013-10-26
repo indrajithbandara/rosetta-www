@@ -1,0 +1,18 @@
+---
+title: Tiger Test Image
+layout: default
+slug: tiger
+tags: ['vector']
+---
+<%= render 'navpost' %>
+<div class="row-fluid">
+	<div class="span12">
+		<div class="span5">
+			This is a test image that originally came with GhostScript but has since used to test vector graphics rendering and file formats
+			<div class="span12" id="drs-download"></div>
+		</div>
+		<div class="span7 text-right">
+			<a href="/files/zoom.html?<%=h item[:slug] %>"><img alt="thumbnail" class="img-polaroid" src="/images/thumbnail/<%=h item[:slug] %>-512w.png" /></a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,96 @@
+---
+title: Metadata for Rosetta Files
+layout: default
+---
+
+<div class="row-fluid">
+	<div class="span12">
+		<h2><%=h @item[:title] %></h2>
+		<p>Alongside each file is a separate file with metadata about it.  The metadata file has the same name but the extesion <code>.properties</code>.
+		This file is the standard <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html">Java file format</a>, with the additional
+		restriction that Unicode escapes <i>must</i> be used on all non-ASCII characters.</p>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">
+		<p>The follow properties are available:</p>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Property</th>
+					<th>Description</th>
+					<th>Comments</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>contenttype</td>
+					<td>the MIME content type of the file.</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>date</td>
+					<td>date the original object was created</td>
+					<td>ISO 8601 format (YYYY-MM-DD)</td>
+				</tr>
+				<tr>
+					<td>download</td>
+					<td>URL of the original download</td>
+					<td>required if downloaded</td>
+				</tr>
+				<tr>
+					<td>download_page</td>
+					<td>HTML page with a link to download the file.  Often needed if the original website prevents hotlinking.</td>
+					<td>optional</td>
+				</tr>
+				<tr>
+					<td>duration</td>
+					<td>Elapsed time of an audio or video file.</td>
+					<td>In seconds (rounded up)</td>
+				</tr>
+				<tr>
+					<td>extension</td>
+					<td>the last part of the file name, after the period (.)</td>
+					<td>required</td>
+				</tr>
+				<tr>
+					<td>md5sum</td>
+					<td>&nbsp;</td>
+					<td>required</td>
+				</tr>
+				<tr>
+					<td>rights</td>
+					<td>The copyright/release status of the file</td>
+					<td>Possible values:<br/>
+						publicdomain</td>
+				</tr>
+				<tr>
+					<td>size</td>
+					<td>in bytes (decimal)</td>
+					<td>required</td>
+				</tr>
+				<tr>
+					<td>source</td>
+					<td>Name of the original creator of the file</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>source_url</td>
+					<td>URL of the original creator of the file</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>title</td>
+					<td>Short title for the file</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>wikipedia</td>
+					<td>URL to relevant Wikipedia article</td>
+					<td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
