@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><%=h @item[:title] %> - The Digital Rosetta Stone</title>
+<%= render 'meta' %>
+<%= render 'script' %>
+<% if @item.path == '/' %><%= render 'meta-home' %><% end %>
+</head>
+<body>
+<div class="container-narrow">
+<%= render 'navbar' %>
+
+<%= yield %>
+
+<%= render 'footer' %>
+</div><!--/.fluid-container-->
+</body>
+</html>

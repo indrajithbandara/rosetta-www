@@ -1,0 +1,63 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The string given to #compile and #route are matching patterns for
+#   identifiers--not for paths. Therefore, you can’t match on extension.
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+compile '/static/*' do
+  # don’t filter or layout
+end
+
+route '/static/*' do
+	# /static/foo.html/ maps to /foo.html
+	item.identifier[7..-2]
+end
+
+compile '*' do
+	if item.binary?
+		# don’t filter binary items
+	else
+		filter :erb
+		if item[:extension] == 'md'
+			puts "kramdown! #{item.identifier} #{item[:extension]}"
+			filter :kramdown
+		end
+		if item[:layout]
+			layout item[:layout]
+		end
+	end
+end
+
+route '*' do
+	if item.binary?
+		# Write item with identifier /foo/ to /foo.ext
+		item.identifier.chop + '.' + item[:extension]
+	else
+		# Write item with identifier /foo/ to /foo/index.html
+		#puts "filename = #{item[:content_filename]}"
+		#puts "before   = #{item.identifier}"
+		if item.identifier == '/'
+			item.identifier = '/index.html'
+		elsif item.identifier.start_with? '/_post'
+			item.identifier = item.identifier = '/files/' + item.identifier[8..11] + '/' + item.identifier.chop[19..-1] + '.html'
+		elsif item[:extension] == 'md'
+			item.identifier = item.identifier.chop + '.html'
+		elsif item[:content_filename].end_with? '/index.html'
+			item.identifier = item.identifier + 'index.html'
+		else
+			item.identifier = item.identifier.chop + '.' + item[:extension]
+		end
+		#puts "after    = #{item.identifier}"
+	end
+end
+
+layout '*', :erb
