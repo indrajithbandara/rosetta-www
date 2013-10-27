@@ -9,6 +9,8 @@
 		padding-bottom: 40px;
 	  }
 
+	  h1, h2, h3, h4 { font-weight: bold }
+
 	  /* Custom container */
 	  .container-narrow {
 		margin: 0 auto;

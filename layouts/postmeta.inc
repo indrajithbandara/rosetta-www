@@ -59,12 +59,12 @@
 			size = (size / 1024).toFixed(1) + "KB";
 		}
 
-		$("#drs-download").append($("<a>").addClass("btn").attr("href", "http://key.fileformat.info/<%=h item[:filename][15..18]%>-<%=h item[:slug]%>." + metadata["extension"]).text("Download (" + size + ")"));
+		$("#drs-download").append($("<a>").addClass("btn").addClass("btn-default").attr("href", "http://key.fileformat.info/<%=h item[:filename][15..18]%>-<%=h item[:slug]%>." + metadata["extension"]).text("Download (" + metadata["extension"] + ": " + size + ")"));
 	}
 
 </script>
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-md-12">
 		<h3>Metadata <small><a href="/support/metadata.html"><i class="icon-question-sign"></i></a></small></h3>
 		<div id="drs-metadata">
 			<p>Loading, please wait...</p>

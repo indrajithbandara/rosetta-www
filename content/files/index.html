@@ -22,7 +22,7 @@ layout: default
 		end
 %>
 		<tr class="drs-entry-row<% for tag in theItem[:tags] %> tag-<%=tag%><% end %>">
-			<td><img class="img-polaroid" src="/images/thumbnail/<%= theItem[:slug]%>-64sq.png" alt="<%= theItem[:slug]%> thumbnail" /></a><%= theItem[:draft]%></td>
+			<td><img class="img-thumbnail" src="/images/thumbnail/<%= theItem[:slug]%>-64sq.png" alt="<%= theItem[:slug]%> thumbnail" /></a><%= theItem[:draft]%></td>
 			<td style="vertical-align:middle;"><a href="<%=theItem.identifier%>"><%= theItem[:title]%></a></td>
 			<td class="muted" style="vertical-align:middle;"><% for tag in theItem[:tags].sort do %><%=h tag%><% end %></a></td>
 			<td class="muted" style="vertical-align:middle;"><%= theItem[:filename][15..18] %></a></td>

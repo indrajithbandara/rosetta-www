@@ -1,16 +1,16 @@
-<div class="row-fluid">
-	<div class="span12" style="vertical-align:middle;">
+<div class="row">
+	<div class="col-md-12" style="vertical-align:middle;">
 		<div class="pull-right">
 			<% if has_previous(@item) %>
-			<a class="btn btn-small" href="<%=post_previous(@item).path%>">
+			<a class="btn btn-default btn-sm" href="<%=post_previous(@item).path%>">
 			<% else %>
-				<a class="btn btn-small disabled" href="#" onclick="return false;">
+				<a class="btn btn-default btn-sm disabled" href="#" onclick="return false;">
 			<% end %>
 			<small><i class="icon-chevron-left"></i></small> Previous</a>
 			<% if has_next(@item) %>
-			<a class="btn btn-small" href="<%=post_next(@item).path%>">
+			<a class="btn btn-default btn-sm" href="<%=post_next(@item).path%>">
 			<% else %>
-				<a class="btn btn-small disabled" href="#" onclick="return false;">
+				<a class="btn btn-default btn-sm disabled" href="#" onclick="return false;">
 			<% end %>
 			Next <small><i class="icon-chevron-right"></i></small></a>
 		</div>

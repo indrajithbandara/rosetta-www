@@ -9,7 +9,7 @@ noindex: true
 
 		var slug = (location.search + "").replace(/[^a-z]/g, "");
 		console.log("slug=" + slug);
-		var img = $("<img>").attr("src", "/images/thumbnail/" + slug + "-1024w.jpeg").attr("alt", "zoomed thumbnail").addClass("img-polaroid");
+		var img = $("<img>").attr("src", "/images/thumbnail/" + slug + "-1024w.jpeg").attr("alt", "zoomed thumbnail").addClass("img-thumbnail");
 		var link = $("<a>").attr("href", "/images/thumbnail/" + slug + "-2048w.jpeg").append(img);
 		$("#zoom").append(link);
 	});

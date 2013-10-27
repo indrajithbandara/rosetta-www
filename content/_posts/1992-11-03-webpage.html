@@ -5,15 +5,13 @@ slug: webpage
 tags: ['document']
 ---
 <%= render 'navpost' %>
-<div class="row-fluid">
-	<div class="span12">
-		<div class="span5">
-			This is actually the version of the page from a few months later.
-			<div class="span12" id="drs-download"></div>
-		</div>
-		<div class="span7 text-right">
-			<a href="/files/zoom.html?<%=h item[:slug] %>"><img alt="thumbnail" class="img-polaroid" src="/images/thumbnail/<%=h item[:slug] %>-512w.png" /></a>
-		</div>
+<div class="row">
+	<div class="col-md-5">
+		This is actually the version of the page from a few months later.
+		<div class="col-md-12" id="drs-download"></div>
+	</div>
+	<div class="span7 text-right">
+		<a href="/files/zoom.html?<%=h item[:slug] %>"><img alt="thumbnail" class="img-thumbnail" src="/images/thumbnail/<%=h item[:slug] %>-512w.png" /></a>
 	</div>
 </div>
 <%= render 'postmeta' %>
