@@ -4,50 +4,101 @@
 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.css" />
 	<link type="text/css" rel="stylesheet" href="/css/font-awesome.css" />
 	<style type="text/css">
-	  body {
-		padding-top: 20px;
-		padding-bottom: 40px;
-	  }
+	/* Space out content a bit */
+	body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
 
-	  h1, h2, h3, h4 { font-weight: bold }
+	/* Everything but the jumbotron gets side spacing for mobile first views */
+	.header,
+	.marketing,
+	.footer {
+	padding-left: 15px;
+	padding-right: 15px;
+	}
 
-	  /* Custom container */
-	  .container-narrow {
-		margin: 0 auto;
-		max-width: 960px;
-	  }
-	  .container-narrow &gt; hr {
-		margin: 30px 0;
-	  }
+	/* Custom page header */
+	.header {
+	border-bottom: 1px solid #e5e5e5;
+	}
+	/* Make the masthead heading the same height as the navigation */
+	.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	padding-bottom: 19px;
+	}
 
-	  /* Main marketing message and sign up button */
-	  .jumbotron {
-		xmargin: 60px 0;
-		text-align: center;
-	  }
-	  .jumbotron h1 {
-		font-size: 54px;
-		line-height: 1;
-	  }
-	  .jumbotron ul {
-		text-align:left;
+	/* Custom page footer */
+	.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+	}
 
-	  }
+	/* Customize container */
+	@media (min-width: 768px) {
+		.container {
+		max-width: 730px;
+		}
+	}
+	.container-narrow > hr {
+	margin: 30px 0;
+	}
 
-	  /* Supporting marketing content */
-	  .marketing {
-		margin: 60px 0;
-	  }
-	  .marketing p + h4 {
-		margin-top: 28px;
-	  }
-	  .drs-entry-row {
-	  	  cursor: pointer;
-	  }
+	/* Main marketing message and sign up button */
+	.jumbotron {
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	}
+	.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+	}
 
-	  #drs-download {
-	  	  margin: 10px 0px;
-	  	  text-align: center;
-	  }
-	</style>
+	/* Supporting marketing content */
+	.marketing {
+	margin: 40px 0;
+	}
+	.marketing p + h4 {
+	margin-top: 28px;
+	}
+
+	/* Responsive: Portrait tablets and up */
+	@media screen and (min-width: 768px) {
+		/* Remove the padding we set earlier */
+		.header,
+		.marketing,
+		.footer {
+		padding-left: 0;
+		padding-right: 0;
+		}
+		/* Space out the masthead */
+		.xheader {
+		margin-bottom: 30px;
+		}
+		/* Remove the bottom border on the jumbotron for visual effect */
+		.jumbotron {
+		border-bottom: 0;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.container {
+		max-width: 970px;
+		}
+	}
+
+	h1, h2, h3, h4 { font-weight: bold }
+
+	.drs-entry-row {
+		  cursor: pointer;
+	}
+
+	#drs-download {
+		  margin: 10px 0px;
+		  text-align: center;
+	}
+</style>
 

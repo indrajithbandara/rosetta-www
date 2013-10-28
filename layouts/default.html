@@ -8,12 +8,12 @@
 <% if @item.path == '/' %><%= render 'meta-home' %><% end %>
 </head>
 <body>
-<div class="container-narrow">
+<div class="container">
 <%= render 'navbar' %>
 
 <%= yield %>
 
 <%= render 'footer' %>
-</div><!--/.fluid-container-->
+</div><!--/.container-->
 </body>
 </html>

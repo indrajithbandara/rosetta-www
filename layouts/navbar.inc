@@ -1,4 +1,4 @@
-<div class="masthead">
+<div class="header">
 	<ul class="nav nav-pills pull-right">
 		<li<% if @item.path == '/' %> class="active"<% end %>><a href="/index.html">Home</a></li>
 		<li<% if @item.path == '/support/faq.html' %> class="active"<% end %>><a href="/support/faq.html">FAQ</a></li>
@@ -7,4 +7,3 @@
 	</ul>
 	<h3 class="text-muted"><a href="/index.html" style="color:inherit;text-decoration:none;">The Digital Rosetta Stone</a></h3>
 </div>
-<hr>

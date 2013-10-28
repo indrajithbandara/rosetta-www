@@ -6,13 +6,13 @@
 			<% else %>
 				<a class="btn btn-default btn-sm disabled" href="#" onclick="return false;">
 			<% end %>
-			<small><i class="icon-chevron-left"></i></small> Previous</a>
+			<small><i class="fa fa-chevron-left"></i></small> Previous</a>
 			<% if has_next(@item) %>
 			<a class="btn btn-default btn-sm" href="<%=post_next(@item).path%>">
 			<% else %>
 				<a class="btn btn-default btn-sm disabled" href="#" onclick="return false;">
 			<% end %>
-			Next <small><i class="icon-chevron-right"></i></small></a>
+			Next <small><i class="fa fa-chevron-right"></i></small></a>
 		</div>
 		<h3><%=h item[:title] %></h3>
 		<% if item[:draft] %><div class="alert alert-warning alert-block"><h4>Draft</h4>
