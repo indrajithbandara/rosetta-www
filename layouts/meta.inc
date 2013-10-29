@@ -100,5 +100,15 @@
 		  margin: 10px 0px;
 		  text-align: center;
 	}
+
+	.inverse {
+		background-color: #222222;
+		color:#ccc;
+	}
+
+	ul.nav-tabs {
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
 </style>
 
