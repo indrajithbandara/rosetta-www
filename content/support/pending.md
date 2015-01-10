@@ -12,7 +12,8 @@ These are ideas for future entries.  Also see [rejected ideas](rejected.html)
 <% end %>
 
 ## Next
- * first web page
+ * you've got mail
+ * lego brick
 
 ## Raster
  * map of the world (w/political boundaries, city names, etc)
