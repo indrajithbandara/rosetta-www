@@ -6,7 +6,5 @@ title: robots.txt
 #
 # all content is indexable
 #
-Disallow: /css
-Disallow: /js
 Sitemap: http://www.digitalrosetta.org/sitemap.xml
 
