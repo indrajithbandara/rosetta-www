@@ -84,6 +84,11 @@
 		}
 	}
 
+	/* removed dotted line on active tabs */
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+		outline: 0;
+	}
+
 	@media (min-width: 1024px) {
 		.container {
 		max-width: 970px;
