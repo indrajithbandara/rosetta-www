@@ -22,4 +22,5 @@ ORIG=../../rosetta-key/www
 #./_mkthumb.sh ../thumbnail/bluemarble.png bluemarble
 #./_mkthumb.sh ../thumbnail/accent.png accent
 #./_mkthumb.sh ../thumbnail/settlement.jpeg settlement
-./_mkthumb.sh ../thumbnail/webpage.png webpage
+#./_mkthumb.sh ../thumbnail/webpage.png webpage
+./_mkthumb.sh ../thumbnail/opticks.jpeg opticks
