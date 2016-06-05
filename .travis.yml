@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-install: gem install nanoc
+install: gem install nanoc --version 3.7.4
 script: nanoc
 deploy:
   provider: s3
