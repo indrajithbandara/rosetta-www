@@ -14,6 +14,7 @@ These are ideas for future entries.  Also see [rejected ideas](rejected.html)
 ## Next
  * you've got mail
  * lego brick
+ * 42, e, pi
 
 ## Raster
  * map of the world (w/political boundaries, city names, etc)
