@@ -2,4 +2,4 @@
 #
 # run locally
 #
-nanoc autocompile
+jekyll serve --watch --source docs

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{ site.title }} - {{ page.title }}</title>
+{% include meta.inc %}
+{% include script.inc %}
+	{% if page.url == '/index.html or page.url == '/' %}{% include meta-home.html %}{% endif %}
+</head>
+<body>
+<div class="container">
+{% include navbar.inc %}
+	{% if page.slug %}{% include navpost.inc %}{% endif %}
+
+{{ content }}
+
+	{% if page.slug %}{% include postmeta.inc %}{% endif %}
+
+{% include footer.inc %}
+</div><!--/.container-->
+</body>
+</html>

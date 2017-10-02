@@ -1,0 +1,11 @@
+---
+title: robots.txt
+layout: none
+---
+#
+# robots.txt for digitalrosetta.org
+#
+# all content is indexable
+#
+Sitemap: http://www.digitalrosetta.org/sitemap.xml
+

@@ -1,0 +1,56 @@
+---
+title: Complete File List
+layout: default
+---
+<ul class="nav nav-tabs" id="drs-tabs">
+	<li class="active" id="tab-all"><a href="#">All</a></li>
+	{% for tag in site.data.tags %}
+	<li id="tab-{{tag.id}}"><a href="#{{tag.id}}">{{tag.name}}</a></li>
+	{% endfor %}
+</ul>
+<table class="table table-hover">
+	<tbody>
+	{% assign sorted_posts = site.posts | sort:'url' %}
+	{% for post in sorted_posts %}{% if post.noindex or post.draft %}{% else %}
+		<tr class="drs-entry-row tag-{{post.tag}}">
+			<td><img class="img-thumbnail" src="/images/thumbnail/{{post.slug}}-64sq.png" alt="{{page.slug}} thumbnail" /></a></td>
+			<td style="vertical-align:middle;"><a href="{{post.url}}">{{post.title}}</a></td>
+			<td class="muted" style="vertical-align:middle;">{{post.tag}}</a></td>
+			<td class="muted" style="vertical-align:middle;">{{post.date | date: '%Y'}}</a></td>
+		</tr>
+{% endif %}{% endfor %}
+	</tbody>
+</table>
+<script type="text/javascript">
+
+	function switchTabs()
+	{
+		$("#drs-tabs > li").removeClass("active");
+		var hash = window.location.hash;
+		if (!hash || hash == '#')
+		{
+			$(".drs-entry-row").show();
+			$("#tab-all").addClass("active");
+		}
+		else
+		{
+			$(".drs-entry-row").hide();
+			$(".tag-" + hash.substring(1)).show();
+			$("#tab-" + hash.substring(1)).addClass("active");
+		}
+	}
+
+	$(document).ready(function() {
+
+		$("tr.drs-entry-row").click(function() {
+			var elem = $("a", $(this))[0];
+			elem.click();
+		});
+
+		switchTabs();
+
+		$(window).bind('hashchange', switchTabs);
+	});
+
+</script>
+

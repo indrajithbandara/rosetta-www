@@ -3,7 +3,7 @@
 # regenerate thumbnails
 #
 #
-ORIG=../../rosetta-key/www
+ORIG=../../key/www
 #./_mkthumb.sh ${ORIG}/1903-firstflight.tiff firstflight
 #./_mkthumb.sh ${ORIG}/1969-earthrise.tiff earthrise
 #./_mkthumb.sh ${ORIG}/1972-pioneer10.svg pioneer10
@@ -23,4 +23,5 @@ ORIG=../../rosetta-key/www
 #./_mkthumb.sh ../thumbnail/accent.png accent
 #./_mkthumb.sh ../thumbnail/settlement.jpeg settlement
 #./_mkthumb.sh ../thumbnail/webpage.png webpage
-./_mkthumb.sh ../thumbnail/opticks.jpeg opticks
+#./_mkthumb.sh ../thumbnail/opticks.jpeg opticks
+./_mkthumb.sh ${ORIG}/1963-smiley.svg smiley
