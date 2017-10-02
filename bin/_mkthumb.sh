@@ -9,7 +9,7 @@ if [ -z "$1" ] || [ -z "$2" ]; then
 	exit 1
 fi
 
-DEST=../content/images/thumbnail
+DEST=../docs/images/thumbnail
 
 #
 # fit into square, w/padding
