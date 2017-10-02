@@ -1,0 +1,15 @@
+- id: audio
+  name: Audio
+
+- id: document
+  name: Document
+
+- id: raster
+  name: Raster
+
+- id: text
+  name: Text
+
+- id: vector
+  name: Vector
+
