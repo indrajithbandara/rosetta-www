@@ -26,4 +26,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: fileformat/rosetta-www
-    branch: gh-pages
+    branch: master
