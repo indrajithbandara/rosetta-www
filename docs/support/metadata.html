@@ -1,11 +1,10 @@
 ---
-title: Metadata for Rosetta Files
-layout: default
+title: File Metadata
 ---
 
 <div class="row">
 	<div class="col-md-12">
-		<h2><%=h @item[:title] %></h2>
+		<h2>{{page.title}}</h2>
 		<p>Alongside each file is a separate file with metadata about it.  The metadata file has the same name but the extesion <code>.properties</code>.
 		This file is the standard <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html">Java file format</a>, with the additional
 		restriction that Unicode escapes <i>must</i> be used on all non-ASCII characters.</p>

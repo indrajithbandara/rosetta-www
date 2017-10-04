@@ -1,0 +1,15 @@
+---
+title: Support
+noindex: true
+---
+
+<table class="table table-hover">
+    <tbody>
+    {% assign sorted_pages = site.pages | sort:'url' %}
+    {% for thePage in sorted_pages %}{% if thePage.noindex or thePage.draft or thePage.url > '/support0' or thePage.url < '/support' %}{% else %}
+    <tr>
+        <td style="vertical-align:middle;"><a href="/{{thePage.path}}">{{thePage.title}}</a></td>
+    </tr>
+    {% endif %}{% endfor %}
+    </tbody>
+</table>
