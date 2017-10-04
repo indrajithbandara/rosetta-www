@@ -25,4 +25,5 @@ ORIG=../../key/www
 #./_mkthumb.sh ../thumbnail/webpage.png webpage
 #./_mkthumb.sh ../thumbnail/opticks.jpeg opticks
 #./_mkthumb.sh ${ORIG}/1963-smiley.svg smiley
-./_mkthumb.sh ../thumbnail/copernicus.jpeg copernicus
+#./_mkthumb.sh ../thumbnail/copernicus.jpeg copernicus
+./_mkthumb.sh ../thumbnail/nobelprize.png nobelprize
