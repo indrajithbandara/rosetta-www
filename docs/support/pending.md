@@ -10,10 +10,35 @@ These are ideas for future entries.  Also see [rejected ideas](rejected.html)
 {% for post in sorted_posts %}{% if post.draft %}
  * [{{post.title}}]({{post.url}}) ({{post.tag}}){% endif %}{% endfor %}
 
-## Next
- * you've got mail
+## 3D
  * lego brick
- * 42, e, pi
+ * [Pioneer](https://nasa3d.arc.nasa.gov/detail/eoss-pioneer) or [similar](https://nasa3d.arc.nasa.gov/models)
+ * [3DBenchy](http://www.3dbenchy.com/) - [check license](http://www.3dbenchy.com/license/)
+ * [Cornell box](https://en.wikipedia.org/wiki/Cornell_box)
+ * [Utah teapot](https://en.wikipedia.org/wiki/Utah_teapot)
+ * [Stanford bunny](https://en.wikipedia.org/wiki/Stanford_bunny)
+ * [Stanford Dragon](https://en.wikipedia.org/wiki/Stanford_dragon)
+
+## Audio
+ * You've got mail
+ * JFK Man on the moon by the end of the decade
+ * 1808—Beethoven's Fifth Symphony
+ 	http://imslp.org/wiki/Symphony_No.9,_Op.125_%28Beethoven,_Ludwig_van%29
+ 	http://archive.org/details/BeethovenSymphonyNo.9choral
+ 	http://archive.org/details/BeethovenSymphonyNr.Ix
+ 	http://en.wikipedia.org/wiki/Symphony_No._9_%28Beethoven%29
+ 	NO: bad license http://archive.org/details/beethoven9
+ * Voyager Golden Record:
+ 	http://en.wikipedia.org/wiki/Voyager_Golden_Record
+ 	http://re-lab.net/welcome/
+
+## Document
+ * [UN Declaration of Human Rights](http://www.un.org/en/universal-declaration-human-rights/index.html)
+ * 1879 Light bulb patent
+ * [da Vinci resume](http://www.openculture.com/2014/01/leonardo-da-vincis-handwritten-resume-1482.html)
+
+## Other
+ * [Smith Papyrus](http://en.wikipedia.org/wiki/File:Edwin_Smith_Papyrus_v2.jpg)
 
 ## Raster
  * map of the world (w/political boundaries, city names, etc)
@@ -24,10 +49,6 @@ These are ideas for future entries.  Also see [rejected ideas](rejected.html)
 		http://digitaljournalist.org/issue0309/lm05.html
 		http://iconicphotos.wordpress.com/2010/08/06/hiroshima-6th-august-1945/
 		http://iconicphotos.wordpress.com/2009/07/30/h-bomb-vaporizes-elugelab/
- * Muybridge's motion studies
-	http://digitaljournalist.org/issue0309/lm20.html
-	http://iconicphotos.wordpress.com/2011/10/12/muybridges-motion-studies/
-	http://commons.wikimedia.org/wiki/File:Muybridge_race_horse_gallop.jpg
  * First X-Ray:
 	http://digitaljournalist.org/issue0309/lm27.html
  * First photograph by Joseph Nicéphore Niépce:
@@ -49,6 +70,12 @@ These are ideas for future entries.  Also see [rejected ideas](rejected.html)
  * Beatles - Abbey Road cover
  * Tartan Ribbon - first color photo
 	http://commons.wikimedia.org/wiki/File:Tartan_Ribbon.jpg
+ * [Wikipedia Featured Pictures](http://en.wikipedia.org/wiki/Wikipedia:Featured_pictures)
+
+## Text
+ * Universal Declaration of Human Rights 1948
+ * [Cyrus Cylinder](http://en.wikipedia.org/wiki/Cyrus_Cylinder)
+ * [Martin Luther's 95 Theses](http://en.wikipedia.org/wiki/The_Ninety-Five_Theses)
 
 ## Vector
  * globe
@@ -57,43 +84,13 @@ These are ideas for future entries.  Also see [rejected ideas](rejected.html)
  * playoff bracket
  * flowchart (yworks sample?)
  * [first maps of the internet](https://www.scientificamerican.com/gallery/early-sketch-of-arpanets-first-four-nodes/)
- * toy brick
 
-## Plain Text
- * Universal Declaration of Human Rights 1948
- * [Cyrus Cylinder](http://en.wikipedia.org/wiki/Cyrus_Cylinder)
- * [Martin Luther's 95 Theses](http://en.wikipedia.org/wiki/The_Ninety-Five_Theses)
-
-## Formatted text
-
- * UN Charter
- * Bible
- * Koran
- * Torah
- * The Communist Manifesto
- * 1879 Light bulb patent
- * Book of Kells
-
-## Audio
- * You've got mail
- * JFK Man on the moon by the end of the decade
- * 1808—Beethoven's Fifth Symphony
- 	http://imslp.org/wiki/Symphony_No.9,_Op.125_%28Beethoven,_Ludwig_van%29
- 	http://archive.org/details/BeethovenSymphonyNo.9choral
- 	http://archive.org/details/BeethovenSymphonyNr.Ix
- 	http://en.wikipedia.org/wiki/Symphony_No._9_%28Beethoven%29
- 	NO: bad license http://archive.org/details/beethoven9
- * Voyager Golden Record:
- 	http://en.wikipedia.org/wiki/Voyager_Golden_Record
- 	http://re-lab.net/welcome/
-
-## Moving
- * http://www.britishpathe.com/
- * Dancing Baby
-
-## Other
-http://en.wikipedia.org/wiki/Wikipedia:Featured_pictures
-http://en.wikipedia.org/wiki/File:Edwin_Smith_Papyrus_v2.jpg
+## Video
+ * Earth at night - [Black Marble](https://www.nasa.gov/mission_pages/NPP/news/earth-at-night.html)
+ * Muybridge's motion studies
+	http://digitaljournalist.org/issue0309/lm20.html
+	http://iconicphotos.wordpress.com/2011/10/12/muybridges-motion-studies/
+	http://commons.wikimedia.org/wiki/File:Muybridge_race_horse_gallop.jpg
 
 
 
