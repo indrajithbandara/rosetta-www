@@ -4,9 +4,9 @@ layout: default
 ---
 <ul class="nav nav-tabs" id="drs-tabs">
 	<li class="active" id="tab-all"><a href="#">All</a></li>
-	{% for tag in site.data.tags %}
-	<li id="tab-{{tag.id}}"><a href="#{{tag.id}}">{{tag.name}}</a></li>
-	{% endfor %}
+	{% for tag in site.data.tags %}{% if tag.tab %}
+	<li id="tab-{{tag.id}}"><a href="#{{tag.id}}">{{tag.short_name}}</a></li>
+	{% endif %}{% endfor %}
 </ul>
 <table class="table table-hover">
 	<tbody>

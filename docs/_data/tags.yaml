@@ -1,18 +1,73 @@
+- id: threed
+  short_name: 3D
+  long_name: 3D Objects
+  description: 3D Objects and Scenes
+  tab: false
+  home: false
+  future: true
+
 - id: audio
-  name: Audio
+  short_name: Audio
+  long_name: Audio
+  description: Music and sound recordings
+  tab: true
+  home: true
+
+- id: container
+  short_name: Containers
+  long_name: Containers
+  description: Archives, compressed files, disk images and other bundles of multiple files
+  tab: false
+  home: false
+  future: true
 
 - id: data
-  name: Data
+  short_name: Data
+  long_name: Data
+  description: Spreadsheets, databases, data interchange formats
+  tab: true
+  home: true
 
 - id: document
-  name: Document
+  short_name: Documents
+  long_name: Documents
+  description: Formatted text, eBooks
+  tab: true
+  home: true
+
+- id: other
+  short_name: Other
+  long_name: Other
+  description: Any of the other zillion things you might store digitally that don't fit any of the other categories
+  tab: false
+  home: false
+  future: true
 
 - id: raster
-  name: Raster
+  short_name: Raster
+  long_name: Raster Images
+  description: Photos, screenshots
+  tab: true
+  home: true
 
 - id: text
-  name: Text
+  short_name: Text
+  long_name: Text
+  description: Plain (unformatted) text
+  tab: true
+  home: true
 
 - id: vector
-  name: Vector
+  short_name: Vector
+  long_name: Vector Images
+  description: CAD/CAM, diagrams, flowcharts, fonts, 3D shapes
+  tab: true
+  home: true
 
+- id: video
+  short_name: Video
+  long_name: Video
+  description: Moving images with sound
+  tab: false
+  home: false
+  future: true

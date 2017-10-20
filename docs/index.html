@@ -13,74 +13,35 @@ layout: default
 <hr>
 
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail linkbox" id="raster">
-      <img alt="Raster Images" src="/images/home/raster.jpeg" />
-      <div class="caption">
-        <h3>Raster images</h3>
-        <p>Photos, screenshots</p>
-      </div>
+{% assign tagcount = 0 %}
+{% for tag in site.data.tags %}{% if tag.home %}{% assign tagcount = tagcount | plus:1 %}
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail linkbox" data-tag="{{tag.id}}">
+            <img alt="{{tag.long_name}}" src="/images/home/{{tag.id}}.jpeg" />
+            <div class="caption">
+                <h3>{{tag.long_name}}</h3>
+                <p>{{tag.description}}</p>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail linkbox" id="vector">
-      <img alt="Raster Images" src="/images/home/vector.jpeg" style="border: 1px solid #DDDDDD;" />
-      <div class="caption">
-        <h3>Vector images</h3>
-        <p>CAD/CAM, diagrams, flowcharts, fonts, 3D shapes</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail linkbox" id="text">
-      <img alt="Raster Images" src="/images/home/text.jpeg" />
-      <div class="caption">
-        <h3>Text</h3>
-        <p>Plain (unformatted) text</p>
-      </div>
-    </div>
-  </div>
-  <div class="clearfix visible-md-block visible-lg-block"></div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail linkbox" id="audio">
-      <img alt="Audio" src="/images/home/audio.jpeg" />
-      <div class="caption">
-		<h3>Audio</h3>
-		<p>Music and sound recordings</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail linkbox" id="document">
-      <img alt="Documents" src="/images/home/document.jpeg" />
-      <div class="caption">
-		<h3>Documents</h3>
-		<p>Formatted text, eBooks</p>
-      </div>
-    </div>
-  </div>
+{% assign needclearfix = tagcount | modulo:3 %}{% if needclearfix == 0 %}<div class="clearfix visible-md-block visible-lg-block"></div>{%endif%}
+{% endif %}{% endfor %}
 </div>
-
 
 <h2>Coming soon</h2>
 <div class="row">
-	<div class="col-md-4">
-		<h3>Video</h4>
-		<p>Moving images</p>
-	</div>
-	<div class="col-md-4">
-		<h3>Data</h4>
-		<p>Spreadsheets, databases, data interchange formats</p>
-	</div>
-	<div class="col-md-4">
-		<h3>Containers</h4>
-		<p>Archives, compressed files, disk images and other bundles of multiple files</p>
-	</div>
-	<div class="col-md-4">
-		<h3>Other</h4>
-		<p>Any of the other zillion things you might store digitally that don't fit any of the other categories.</p>
-	</div>
+{% for tag in site.data.tags %}{% if tag.future %}
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{tag.long_name}}</h4>
+                <p>{{tag.description}}</p>
+            </div>
+        </div>
+    </div>
+{% endif %}{% endfor %}
 </div>
+
 <style>
 .linkbox { cursor:pointer;}
 </style>
@@ -89,7 +50,7 @@ layout: default
 	$(document).ready(function() {
 
 		$(".linkbox").click(function() {
-			var tag = $(this).attr("id");
+			var tag = $(this).attr("data-tag");
 			window.location.href = window.location.protocol + '//' + window.location.host + '/files/index.html#' + tag;
 		});
 	});
