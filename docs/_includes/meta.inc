@@ -1,6 +1,6 @@
 {% if page.drafts or page.noindex %}	<meta name="robots" content="NOINDEX" />
 {% endif %}	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.css" />
 	<link type="text/css" rel="stylesheet" href="/css/font-awesome.css" />
 	<style type="text/css">

@@ -11,7 +11,7 @@
 			success:  function(data) { displayMetadata(parseProperties(data));},
 			timeout: 10000,
 			type: "GET",
-			url: "http://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}.properties"
+			url: "https://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}.properties"
 		});
 	});
 
@@ -59,7 +59,7 @@
 			size = (size / 1024).toFixed(1) + "KB";
 		}
 
-		$("#drs-download").append($("<a>").addClass("btn").addClass("btn-default").attr("href", "http://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}." + metadata["extension"]).text("Download (" + metadata["extension"] + ": " + size + ")"));
+		$("#drs-download").append($("<a>").addClass("btn").addClass("btn-default").attr("href", "https://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}." + metadata["extension"]).text("Download (" + metadata["extension"] + ": " + size + ")"));
 	}
 
 </script>

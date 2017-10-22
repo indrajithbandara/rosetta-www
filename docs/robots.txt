@@ -7,5 +7,5 @@ layout: none
 #
 # all content is indexable
 #
-Sitemap: http://www.digitalrosetta.org/sitemap.xml
+Sitemap: https://www.digitalrosetta.org/sitemap.xml
 
