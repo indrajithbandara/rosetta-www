@@ -1,17 +1,16 @@
-<script type="text/javascript" src="/js/properties.js"></script>
 <script type="text/javascript">
 	$(document).ready( function() {
 		$.ajax({
-			dataType: "text",
+			dataType: "json",
 			error: function(xhr, status, error)
 				{
 					$("#drs-metadata").empty().append($("<div>").addClass("alert alert-error").text(status + ": " + error));
 					$("#drs-changelog").empty().append($("<div>").addClass("alert alert-error").text(status + ": " + error));
 				},
-			success:  function(data) { displayMetadata(parseProperties(data));},
+			success:  function(data) { displayMetadata(data);},
 			timeout: 10000,
 			type: "GET",
-			url: "https://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}.properties"
+			url: "https://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}.json"
 		});
 	});
 
@@ -25,7 +24,10 @@
 			var row = $("<tr>");
 			row.append($("<td>").text(key));
 			var value = metadata[key];
-			if (value.match(/^https?:\/\//))
+			if (typeof value == "number") {
+				row.append($("<td>").text(new Intl.NumberFormat().format(value)));
+			}
+			else if (typeof value == "string" && value.match(/^https?:\/\//))
 			{
 				row.append($("<td>").append($("<a>").attr("href", value).text(value)));
 			}
