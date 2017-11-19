@@ -58,7 +58,7 @@
 		}
 		else if (size > 1024)
 		{
-			size = (size / 1024).toFixed(1) + "KB";
+			size = (size / 1024).toFixed(0) + "KB";
 		}
 
 		$("#drs-download").append($("<a>").addClass("btn").addClass("btn-default").attr("href", "https://key.fileformat.info/{{page.date | date: '%Y'}}-{{page.slug}}." + metadata["extension"]).text("Download (" + metadata["extension"] + ": " + size + ")"));
@@ -67,7 +67,7 @@
 </script>
 <div class="row">
 	<div class="col-md-12">
-		<h3>Metadata <small><a href="/support/metadata.html"><i class="icon-question-sign"></i></a></small></h3>
+		<h3>Metadata <small><a href="/support/metadata.html"><i class="fa fa-question-circle-o"></i></a></small></h3>
 		<div id="drs-metadata">
 			<p>Loading, please wait...</p>
 		</div>
