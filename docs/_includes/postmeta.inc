@@ -67,7 +67,7 @@
 </script>
 <div class="row">
 	<div class="col-md-12">
-		<h3>Metadata <small><a href="/support/metadata.html"><i class="fa fa-question-circle-o"></i></a></small></h3>
+		<h3>Metadata <small><a href="/support/metadata.html"><i class="fa fa-question-circle"></i></a></small></h3>
 		<div id="drs-metadata">
 			<p>Loading, please wait...</p>
 		</div>
