@@ -5,20 +5,20 @@ title: File Metadata
 <div class="row">
 	<div class="col-md-12">
 		<h2>{{page.title}}</h2>
-		<p>Alongside each file is a separate file with metadata about it.  The metadata file has the same name but the extesion <code>.properties</code>.
-		This file is the standard <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html">Java file format</a>, with the additional
-		restriction that Unicode escapes <i>must</i> be used on all non-ASCII characters.</p>
+		<p>Alongside each file is a separate file with metadata about it.  The file is the standard <a href="https://www.json.org/">JSON</a> file format.</p>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-md-12">
+		<h3>Key files</h3>
+		<p>Metadata files have the same name as the original but with the <code>.json</code> extension.</p>
 		<p>The follow properties are available:</p>
 		<table class="table table-bordered table-striped">
 			<thead>
 				<tr>
-					<th>Property</th>
-					<th>Description</th>
+					<th>Key</th>
+					<th>Value</th>
 					<th>Comments</th>
 				</tr>
 			</thead>
@@ -89,6 +89,35 @@ title: File Metadata
 					<td>URL to relevant Wikipedia article</td>
 					<td>&nbsp;</td>
 				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<h3>Format files</h3>
+		<p>Metadata files have the same name as the original with the <code>.json</code> extension added onto the end.</p>
+		<p>The follow properties are available:</p>
+		<table class="table table-bordered table-striped">
+			<thead>
+			<tr>
+				<th>Key</th>
+				<th>Value</th>
+				<th>Comments</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>md5sum</td>
+				<td>&nbsp;</td>
+				<td>required</td>
+			</tr>
+			<tr>
+				<td>size</td>
+				<td>in bytes (decimal)</td>
+				<td>required</td>
+			</tr>
 			</tbody>
 		</table>
 	</div>
