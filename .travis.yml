@@ -6,7 +6,9 @@ rvm:
 before_install:
   - sudo apt-get -qq update
 install:
-  - gem install jekyll -v 3.4.5
+  - gem install ruby_dep -v 1.3.1
+  - gem install listen -v 3.0.8
+  - gem install jekyll
   - gem install jekyll-redirect-from
 script:
   - jekyll build --source docs
